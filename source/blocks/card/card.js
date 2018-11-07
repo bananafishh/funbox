@@ -66,6 +66,7 @@
     }
   }
 
+  /** @this onCardClick */
   function onCardClick() {
     const cardCaption = this.parentNode.querySelector('.js-card-caption');
     const cardDescr = this.parentNode.querySelector('.js-card-descr');
@@ -84,6 +85,7 @@
     }
   }
 
+  /** @this onCardBtnClick */
   function onCardBtnClick() {
     const cardCaption = this.parentNode;
     const card = cardCaption.parentNode.querySelector('.js-card');
@@ -99,6 +101,7 @@
     }
   }
 
+  /** @this onCardMouseLeave */
   function onCardMouseLeave() {
     if (this.classList.contains('card--selected')) {
       this.classList.remove('card--selected');
@@ -106,6 +109,7 @@
     }
   }
 
+  /** @this onCardMouseEnter */
   function onCardMouseEnter() {
     if (this.classList.contains('card--abandoned')) {
       this.classList.remove('card--abandoned');
