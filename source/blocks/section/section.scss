@@ -1,0 +1,23 @@
+.section {
+  padding-top: 38px;
+  padding-bottom: 66px;
+}
+
+.section__title {
+  margin-top: 0;
+  margin-bottom: 23px;
+  font-family: "Exo2", "Trebuchet MS", Arial, sans-serif;
+  font-size: rem(32px, $fs-base);
+  font-weight: 300;
+  line-height: 1.2;
+  color: $color-text-contrasting;
+  text-align: center;
+
+  @media (min-width: $screen-xs) {
+    font-size: calc(32px + (36 - 32) * (100vw - 320px) / (992 - 320));
+  }
+
+  @media (min-width: $screen-lg) {
+    font-size: rem(36px, $fs-base);
+  }
+}

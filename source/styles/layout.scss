@@ -1,0 +1,23 @@
+.container {
+  max-width: 1200px;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin: auto;
+
+  &--centering {
+    $centering-width: $screen-md;
+
+    > * {
+      @media (min-width: $centering-width) {
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+    }
+
+    @media (min-width: $centering-width) {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+  }
+}

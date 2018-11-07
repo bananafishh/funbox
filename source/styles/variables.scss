@@ -1,0 +1,84 @@
+/**
+* 1. Внутренние переменные для цветовой палитры приложения.
+*
+* Важно: не использовать самостоятельно в таблицах стилей, только в качестве
+* значений для глобальных цветовых переменных.
+*
+* Для именования внутренних цветовых переменных использован сервис
+* http://www.color-blindness.com/color-name-hue/
+*/
+
+/**
+* Синяя палитра
+*/
+
+$summer-sky:       #1698d9;
+$summer-sky-light: #2ea8e6;
+
+/**
+* Красная палитра
+*/
+
+$ruby:   #d91667;
+$cerise: #e62e7a;
+
+
+/**
+* Жёлтая палитра
+*/
+
+$laser-lemon: #ffff66;
+
+
+/**
+* Серая палитра
+*/
+
+$white:       #ffffff;
+$white-smoke: #f2f2f2;
+$dark-gray:   #b3b3b3;
+$dim-gray:    #666666;
+$black:       #000000;
+
+
+/**
+* 2. Глобальные переменные для цветовой палитры приложения.
+*/
+
+$color-text: $dim-gray;
+$color-text-light: $dark-gray;
+$color-text-dark: $black;
+$color-text-contrasting: $white;
+$color-text-warning: $laser-lemon;
+
+$color-card-default: $summer-sky;
+$color-card-default-hover: $summer-sky-light;
+$color-card-selected: $ruby;
+$color-card-selected-hover: $cerise;
+$color-card-disabled: $dark-gray;
+$color-card-bg: $white-smoke;
+
+$color-link: $summer-sky;
+$color-link-hover: $summer-sky-light;
+
+$color-page-bg: $black;
+
+
+/**
+* 3. Брейкпоинты
+*/
+
+$screen-xxs: 0;
+$screen-xs:  320px;
+$screen-sm:  480px;
+$screen-md:  768px;
+$screen-lg:  992px;
+$screen-xl:  1200px;
+$screen-xxl: 1800px;
+
+
+/**
+* 4. Размеры шрифта
+*/
+
+$fs-base: 16px;

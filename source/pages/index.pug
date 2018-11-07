@@ -1,0 +1,79 @@
+include ../blocks/page-header/page-header
+
+
+main.container.container--centering
+  h1.is-visually-hidden Магазин кормов для пушистых друзей "Нямушка"
+
+  section.section
+    h2.section__title Ты сегодня покормил кота?
+
+    ul.cards
+      li.cards__item
+        article.card.js-card
+          div.card__body
+            div.card__text
+              div.card__subtitle(data-hover="Котэ не одобряет?") #[span.card__subtitle-text Сказочное заморское яство]
+
+              h3.card__title Ня&shy;муш&shy;ка #[b.js-card-ingredient с&nbsp;фуа-гра]
+
+              ul.card__features
+                li #[strong 10]&nbsp;порций
+                li мышь в&nbsp;подарок
+
+            img.card__img.js-card-img(src="img/cat-min.jpg" srcset="img/cat-min.jpg 255w, img/cat@2x-min.jpg 510w" width="255" height="268" alt="Взрослая кошка")
+
+            div.card__badge
+              div.card__badge-text 0,5#[br] #[span кг]
+
+          button.card__btn(type="button" aria-pressed="false") Выбрать
+
+        p.text-small.is-visually-hidden.js-card-descr Печень утки разварная с&nbsp;артишоками.
+        p.text-small.js-card-caption Чего сидишь? Порадуй котэ, #[button(class="link js-card-btn" type="button") купи]#[span .]
+
+      li.cards__item
+        article.card.js-card
+          div.card__body
+            div.card__text
+              div.card__subtitle(data-hover="Котэ не одобряет?") #[span.card__subtitle-text Сказочное заморское яство]
+
+              h3.card__title Ня&shy;муш&shy;ка #[b.js-card-ingredient с&nbsp;рыбой]
+
+              ul.card__features
+                li #[strong 40]&nbsp;порций
+                li #[strong 2]&nbsp;мыши в&nbsp;подарок
+
+            img.card__img.js-card-img(src="img/cat-min.jpg" srcset="img/cat-min.jpg 255w, img/cat@2x-min.jpg 510w" width="255" height="268" alt="Взрослая кошка")
+
+            div.card__badge
+              div.card__badge-text 2#[br] #[span кг]
+
+          button.card__btn(type="button" aria-pressed="false") Выбрать
+
+        p.text-small.is-visually-hidden.js-card-descr Головы щучьи с&nbsp;чесноком да&nbsp;свежайшая сёмгушка.
+        p.text-small.js-card-caption Чего сидишь? Порадуй котэ, #[button(class="link js-card-btn" type="button") купи]#[span .]
+
+      li.cards__item
+        article.card.card--disabled.js-card
+          div.card__body
+            div.card__text
+              div.card__subtitle(data-hover="Котэ не одобряет?") #[span.card__subtitle-text Сказочное заморское яство]
+
+              h3.card__title Ня&shy;муш&shy;ка #[b.js-card-ingredient с&nbsp;курой]
+
+              ul.card__features
+                li #[strong 100]&nbsp;порций
+                li #[strong 5]&nbsp;мышей в&nbsp;подарок
+                li заказчик доволен
+
+            img.card__img.js-card-img(src="img/cat-min.jpg" srcset="img/cat-min.jpg 255w, img/cat@2x-min.jpg 510w" width="255" height="268" alt="Взрослая кошка")
+
+            div.card__badge
+              div.card__badge-text 5#[br] #[span кг]
+
+          button.card__btn(type="button" aria-pressed="false") Выбрать
+
+        p.text-small.is-visually-hidden.js-card-descr Филе из&nbsp;цыплят с&nbsp;трюфелями в&nbsp;бульоне.
+        p.text-small.js-card-caption Чего сидишь? Порадуй котэ, #[button(class="link js-card-btn" type="button") купи]#[span .]
+
+
+include ../blocks/page-footer/page-footer

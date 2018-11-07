@@ -1,0 +1,95 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: $color-page-bg;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.5) 100%), url("../img/bg-page-min.jpg");
+}
+
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+button {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  cursor: pointer;
+}
+
+
+p {
+  .link:nth-last-of-type(1) {
+    + span {
+      color: $color-link;
+    }
+  }
+}
+
+
+.link {
+  position: relative;
+  padding: 0;
+  color: $color-link;
+  background: none;
+  border: none;
+  border-bottom: 1px dashed $color-link;
+  transition: color 0.2s, border-color 0.2s;
+
+  &:hover {
+    color: $color-link-hover;
+    border-bottom-color: $color-link-hover;
+  }
+
+  &:focus {
+    outline: 2px dashed $color-text-contrasting;
+  }
+
+  &[type="button"] {
+    font-size: 1em;
+  }
+}
+
+
+/**
+* Классы-хелперы
+*/
+
+.text-small {
+  font-size: rem(13px, $fs-base);
+  line-height: 1.231;
+  color: $color-text-contrasting;
+
+  &--warning {
+    color: $color-text-warning;
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+
+.is-visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
